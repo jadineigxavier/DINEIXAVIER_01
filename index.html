@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DINEIX — Sites, Identidade Visual, Apps & Vídeo</title>
+
+    <!-- ========== IMPORTAÇÃO DE FONTES ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!-- =====================================================
+         CABEÇALHO — position: fixed (nunca se move)
+         ===================================================== -->
+    <header class="nav" id="siteHeader">
+      <div class="nav-inner">
+        <a href="#inicio" class="nav-mark">DINEI<span>XAVIER</span></a>
+        <nav class="links">
+          <a href="#inicio">Início</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#precos">Preços</a>
+          <a href="#processo">Como funciona</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="nav-cta" href="#contato">Vamos conversar</a>
+          <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+              <line class="bar bar-top" x1="3" y1="6" x2="21" y2="6"></line>
+              <line class="bar bar-mid" x1="3" y1="12" x2="21" y2="12"></line>
+              <line class="bar bar-bot" x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="#inicio">Início</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#precos">Preços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+    <section class="hero seam-bottom hero-editorial" id="inicio">
+      <div class="wrap">
+        <span class="eyebrow">● Disponível para um projeto em setembro</span>
+        <h2 class="display-xl reveal">
+          Sua marca com <span class="accent">uma só voz</span>,
+          em todo lugar que ela aparecer.
+        </h2>
+        <p class="lead reveal">
+          Sou o Dinei Xavier. Combino criatividade e estratégia para desenvolver sites, 
+          identidades visuais, aplicativos e vídeos que refletem a essência do seu negócio — 
+          sem a necessidade de procurar diferentes fornecedores para cada etapa.
+        </p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-primary" href="#contato">Quer desenvolver um projeto? →</a>
+          <a class="link-inline" href="#precos">Ver preços</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Sites</span><span>Identidade visual</span><span>Aplicativos</span><span>Vídeo</span>
+        <span>Sites</span><span>Identidade visual</span><span>Aplicativos</span><span>Vídeo</span>
+        <span>Sites</span><span>Identidade visual</span><span>Aplicativos</span><span>Vídeo</span>
+        <span>Sites</span><span>Identidade visual</span><span>Aplicativos</span><span>Vídeo</span>
+        
+      </div>
+    </div>
+
+    <!-- =====================================================
+         🖼️ PORTFÓLIO
+         ===================================================== -->
+    <section class="portfolio" id="portfolio">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">// portfólio</span>
+          <h2>Como fica na prática</h2>
+          <p>
+            Exemplos  de cada tipo de trabalho
+          </p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Categorias de portfólio">
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-sites"
+            id="tab-sites"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+            Sites & Landing Pages
+          </button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-identidade"
+            id="tab-identidade"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
+            Identidade Visual
+          </button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-apps"
+            id="tab-apps"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg>
+            Aplicativos
+          </button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-video"
+            id="tab-video"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="M16 10l6-4v12l-6-4"/></svg>
+            Vídeos
+          </button>
+        </div>
+
+        <div
+          class="tab-panel active"
+          id="panel-sites"
+          role="tabpanel"
+          aria-labelledby="tab-sites"
+        >
+          <div class="mock-grid">
+            <figure class="mock-card">
+              <a
+                href="https://www.dxavierminis.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="imagens/site dxavierrminis.png"
+                  alt="dxavierminis.com.br"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    height: 170px;
+                    object-fit: cover;
+                  "
+                />
+              </a>
+              <figcaption>Exemplo - landing Page</figcaption>
+            </figure>
+            <figure class="mock-card">
+              <a
+                href="files/RAIZ_COLETIVA.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="imagens/imagem02.png"
+                  alt="dxavierminis.com.br"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    height: 170px;
+                    object-fit: cover;
+                  "
+                />
+              </a>
+                <rect
+                  x="0"
+                  y="0"
+                  width="260"
+                  height="26"
+                  rx="10"
+                  fill="var(--bg-panel)"
+                />
+                <circle cx="16" cy="13" r="4" fill="var(--sinal)" />
+                <circle cx="30" cy="13" r="4" fill="var(--menta)" />
+                <circle cx="44" cy="13" r="4" fill="var(--ink-dim)" />
+                <rect
+                  x="20"
+                  y="44"
+                  width="220"
+                  height="40"
+                  rx="6"
+                  fill="var(--sinal)"
+                  opacity="0.18"
+                />
+                <rect
+                  x="20"
+                  y="96"
+                  width="100"
+                  height="10"
+                  rx="4"
+                  fill="var(--linha)"
+                />
+                <rect
+                  x="20"
+                  y="112"
+                  width="150"
+                  height="10"
+                  rx="4"
+                  fill="var(--linha)"
+                />
+                <rect
+                  x="20"
+                  y="134"
+                  width="70"
+                  height="22"
+                  rx="6"
+                  fill="var(--sinal)"
+                />
+              </svg>
+              <figcaption>Exemplo — landing page de campanha (projeto portfólio)</figcaption>
+            </figure>
+            <figure class="mock-card">
+               <a
+                href="flores/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="imagens/imagem03.png"
+                  alt="chroma atelie"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    height: 170px;
+                    object-fit: cover;
+                  "
+                />
+              </a>
+                <rect
+                  x="0"
+                  y="0"
+                  width="260"
+                  height="26"
+                  rx="10"
+                  fill="var(--bg-panel)"
+                />
+                <circle cx="16" cy="13" r="4" fill="var(--sinal)" />
+                <circle cx="30" cy="13" r="4" fill="var(--menta)" />
+                <circle cx="44" cy="13" r="4" fill="var(--ink-dim)" />
+                <rect
+                  x="20"
+                  y="44"
+                  width="100"
+                  height="90"
+                  rx="6"
+                  fill="var(--sinal-forte)"
+                  opacity="0.28"
+                />
+                <rect
+                  x="132"
+                  y="44"
+                  width="108"
+                  height="42"
+                  rx="6"
+                  fill="var(--linha)"
+                />
+                <rect
+                  x="132"
+                  y="92"
+                  width="108"
+                  height="42"
+                  rx="6"
+                  fill="var(--linha)"
+                />
+              </svg>
+              <figcaption>Exemplo — página de produto (projeto portfólio)</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div
+          class="tab-panel"
+          id="panel-identidade"
+          role="tabpanel"
+          aria-labelledby="tab-identidade"
+          hidden
+        >
+          <div class="mock-grid">
+            <figure class="mock-card">
+             <img
+                  src="imagens/"
+                  alt="chroma atelie"
+                  style="
+                    width: 100%;
+                    border-radius: 8px;
+                    height: 170px;
+                    object-fit: cover;
+                  "
+                />
+              <figcaption>Exemplo — logotipo & paleta</figcaption>
+            </figure>
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect
+                  width="260"
+                  height="170"
+                  rx="10"
+                  fill="var(--bg)"
+                  stroke="var(--borda)"
+                />
+                <rect
+                  x="20"
+                  y="20"
+                  width="100"
+                  height="130"
+                  rx="8"
+                  fill="var(--sinal-forte)"
+                  opacity="0.20"
+                />
+                <rect
+                  x="140"
+                  y="20"
+                  width="100"
+                  height="60"
+                  rx="8"
+                  fill="var(--sinal)"
+                  opacity="0.22"
+                />
+                <rect
+                  x="140"
+                  y="90"
+                  width="100"
+                  height="60"
+                  rx="8"
+                  fill="var(--menta)"
+                  opacity="0.22"
+                />
+              </svg>
+              <figcaption>Exemplo — aplicação da marca</figcaption>
+            </figure>
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect
+                  width="260"
+                  height="170"
+                  rx="10"
+                  fill="var(--bg)"
+                  stroke="var(--borda)"
+                />
+                <rect
+                  x="20"
+                  y="30"
+                  width="220"
+                  height="26"
+                  rx="6"
+                  fill="var(--linha)"
+                />
+                <rect
+                  x="20"
+                  y="66"
+                  width="150"
+                  height="14"
+                  rx="6"
+                  fill="var(--sinal)"
+                  opacity="0.30"
+                />
+                <rect
+                  x="20"
+                  y="90"
+                  width="150"
+                  height="14"
+                  rx="6"
+                  fill="var(--menta)"
+                  opacity="0.26"
+                />
+                <rect
+                  x="20"
+                  y="114"
+                  width="150"
+                  height="14"
+                  rx="6"
+                  fill="var(--sinal-forte)"
+                  opacity="0.26"
+                />
+              </svg>
+              <figcaption>Exemplo — tipografia & guia de marca</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div
+          class="tab-panel"
+          id="panel-apps"
+          role="tabpanel"
+          aria-labelledby="tab-apps"
+          hidden
+        >
+          <div class="mock-grid">
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect width="260" height="170" rx="10" fill="var(--bg-panel)" />
+                <rect
+                  x="95"
+                  y="14"
+                  width="70"
+                  height="142"
+                  rx="12"
+                  fill="var(--bg)"
+                  stroke="var(--borda)"
+                />
+                <rect
+                  x="108"
+                  y="30"
+                  width="44"
+                  height="8"
+                  rx="4"
+                  fill="var(--sinal)"
+                />
+                <rect
+                  x="108"
+                  y="48"
+                  width="44"
+                  height="30"
+                  rx="6"
+                  fill="var(--linha)"
+                />
+                <rect
+                  x="108"
+                  y="84"
+                  width="44"
+                  height="30"
+                  rx="6"
+                  fill="var(--linha)"
+                />
+              </svg>
+              <figcaption>Exemplo — app de serviços</figcaption>
+            </figure>
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect width="260" height="170" rx="10" fill="var(--bg-panel)" />
+                <rect
+                  x="95"
+                  y="14"
+                  width="70"
+                  height="142"
+                  rx="12"
+                  fill="var(--bg)"
+                  stroke="var(--borda)"
+                />
+                <circle
+                  cx="130"
+                  cy="60"
+                  r="18"
+                  fill="var(--menta)"
+                  opacity="0.32"
+                />
+                <rect
+                  x="108"
+                  y="90"
+                  width="44"
+                  height="8"
+                  rx="4"
+                  fill="var(--linha)"
+                />
+                <rect
+                  x="108"
+                  y="104"
+                  width="44"
+                  height="8"
+                  rx="4"
+                  fill="var(--linha)"
+                />
+              </svg>
+              <figcaption>Exemplo — app de cadastro</figcaption>
+            </figure>
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect width="260" height="170" rx="10" fill="var(--bg-panel)" />
+                <rect
+                  x="95"
+                  y="14"
+                  width="70"
+                  height="142"
+                  rx="12"
+                  fill="var(--bg)"
+                  stroke="var(--borda)"
+                />
+                <rect
+                  x="104"
+                  y="28"
+                  width="52"
+                  height="52"
+                  rx="8"
+                  fill="var(--sinal)"
+                  opacity="0.26"
+                />
+                <rect
+                  x="104"
+                  y="86"
+                  width="52"
+                  height="10"
+                  rx="5"
+                  fill="var(--linha)"
+                />
+                <rect
+                  x="104"
+                  y="102"
+                  width="30"
+                  height="10"
+                  rx="5"
+                  fill="var(--linha)"
+                />
+              </svg>
+              <figcaption>Exemplo — app com catálogo</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div
+          class="tab-panel"
+          id="panel-video"
+          role="tabpanel"
+          aria-labelledby="tab-video"
+          hidden
+        >
+          <div class="mock-grid">
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect
+                  width="260"
+                  height="170"
+                  rx="10"
+                  fill="var(--bg-panel-2)"
+                />
+                <circle
+                  cx="130"
+                  cy="85"
+                  r="26"
+                  fill="var(--sinal)"
+                  opacity="0.75"
+                />
+                <path d="M122 72 L146 85 L122 98 Z" fill="var(--bg-panel-2)" />
+              </svg>
+              <figcaption>Exemplo — vídeo institucional</figcaption>
+            </figure>
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect
+                  width="260"
+                  height="170"
+                  rx="10"
+                  fill="var(--sinal-forte)"
+                  opacity="0.55"
+                />
+                <circle
+                  cx="130"
+                  cy="85"
+                  r="26"
+                  fill="var(--bg-panel-2)"
+                  opacity="0.9"
+                />
+                <path d="M122 72 L146 85 L122 98 Z" fill="var(--sinal-forte)" />
+              </svg>
+              <figcaption>Exemplo — vídeo para redes sociais</figcaption>
+            </figure>
+            <figure class="mock-card">
+              <svg viewBox="0 0 260 170">
+                <rect
+                  width="260"
+                  height="170"
+                  rx="10"
+                  fill="var(--menta)"
+                  opacity="0.55"
+                />
+                <circle
+                  cx="130"
+                  cy="85"
+                  r="26"
+                  fill="var(--bg-panel-2)"
+                  opacity="0.9"
+                />
+                <path d="M122 72 L146 85 L122 98 Z" fill="var(--menta)" />
+              </svg>
+              <figcaption>Exemplo — vídeo de campanha</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p class="portfolio-note">
+          Quer ver algo mais próximo do seu segmento? Me conta o que você
+          precisa que eu mostro referências.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         💬 DEPOIMENTO EM DESTAQUE
+         ===================================================== -->
+    <section class="quote">
+      <div class="wrap reveal">
+        <p class="quote-mark">"</p>
+        <blockquote>
+          Entregou exatamente o que a marca precisava — sem eu ter que ficar
+          explicando a mesma coisa pra três fornecedores diferentes.
+        </blockquote>
+        <span class="quote-attr">— espaço reservado para o depoimento de um cliente real</span>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SERVIÇOS
+         ===================================================== -->
+    <section class="services" id="servicos">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">// o que eu faço</span>
+          <h2>Cada peça da sua presença digital</h2>
+          <p>
+            Seis frentes que costumam exigir seis fornecedores diferentes —
+            aqui, uma pessoa só cuida de tudo com a mesma linguagem visual do
+            início ao fim.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="card reveal">
+            <svg
+              class="icon"
+              viewBox="0 0 48 48"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <rect x="6" y="8" width="36" height="24" rx="2" />
+              <path d="M6 16h36" />
+              <path d="M18 40h12M24 32v8" />
+            </svg>
+            <h3>Sites & manutenção</h3>
+            <p>
+              Criação profissional, rápida e responsiva. Com atualização e
+              suporte contínuos.
+            </p>
+          </div>
+          <div class="card reveal">
+            <svg
+              class="icon"
+              viewBox="0 0 48 48"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <circle cx="24" cy="24" r="16" />
+              <circle cx="24" cy="24" r="8" />
+              <circle cx="24" cy="24" r="1.5" fill="currentColor" />
+            </svg>
+            <h3>Landing pages</h3>
+            <p>
+              Páginas estrategicamente planejadas. Design que atrai, organiza e
+              converte visitantes.
+            </p>
+          </div>
+          <div class="card reveal">
+            <svg
+              class="icon"
+              viewBox="0 0 48 48"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path
+                d="M24 6c9 0 16 6 16 14 0 5-3 6-6 6h-4c-2 0-3 2-1 4 2 2 1 6-3 6-9 0-18-7-18-16C8 12 15 6 24 6Z"
+              />
+              <circle cx="17" cy="20" r="1.6" fill="currentColor" />
+              <circle cx="24" cy="15" r="1.6" fill="currentColor" />
+              <circle cx="31" cy="20" r="1.6" fill="currentColor" />
+            </svg>
+            <h3>Identidade visual & Logo</h3>
+            <p>
+              Sua marca com cara única. Do logotipo até as regras visuais
+              completas.
+            </p>
+          </div>
+          <div class="card reveal">
+            <svg
+              class="icon"
+              viewBox="0 0 48 48"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <rect x="14" y="4" width="20" height="40" rx="3" />
+              <path d="M20 38h8" />
+            </svg>
+            <h3>Aplicativos</h3>
+            <p>
+              Soluções sob medida. Transformo sua ideia em aplicativo funcional
+              e intuitivo.
+            </p>
+          </div>
+          <div class="card muted reveal">
+            <svg
+              class="icon"
+              viewBox="0 0 48 48"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path d="M18 12a6 6 0 000 12h4v-4h-4a2 2 0 010-4h4v-4h-4Z" />
+              <path d="M30 12a6 6 0 010 12h-4v-4h4a2 2 0 000-4h-4v-4h4Z" />
+              <path d="M18 18h12" />
+            </svg>
+            <h3>Edição de Vídeos</h3>
+            <p>
+              Conteúdo que impressiona. Edição profissional pronta para redes
+              sociais.
+            </p>
+          </div>
+          <!-- Único bloco com a cor de destaque (menta) -->
+          <div class="card highlight reveal">
+            <svg
+              class="icon"
+              viewBox="0 0 48 48"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <circle cx="16" cy="24" r="8" />
+              <circle cx="32" cy="24" r="8" />
+            </svg>
+            <div>
+              <h3>Ecossistema integrado</h3>
+              <p>
+                Site, identidade, vídeo e app trabalhando juntos, com a mesma
+                linguagem visual — para sua marca ser reconhecida em qualquer
+                lugar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         💰 PREÇOS
+         ===================================================== -->
+    <section class="precos" id="precos">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">// investimento</span>
+          <h2>Preços por tipo de material</h2>
+          <p>
+            Valores de referência para cada frente de trabalho. O orçamento
+            final depende do escopo, prazo e complexidade do seu projeto.
+          </p>
+        </div>
+
+        <!--
+          ATENÇÃO, DINEI: os valores abaixo são EXEMPLOS de placeholder.
+          Troque pelos preços reais que você pratica antes de publicar.
+        -->
+        <div class="precos-grid">
+          <div class="price-card reveal">
+            <span class="price-tag mono">Sites & manutenção</span>
+            <h3>Site institucional</h3>
+            <p class="price-value"><small> a partir de</small><br>R$ 900</p>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Até 5 páginas responsivas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Formulário de contato</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>1 mês de suporte incluso</li>
+            </ul>
+            <a class="btn-outline-sm" href="#contato">Solicitar orçamento</a>
+          </div>
+          <div class="price-card reveal">
+            <span class="price-tag mono">Landing pages</span>
+            <h3>Landing page</h3>
+            <p class="price-value"><small>a partir de</small><br>R$ 550</p>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Página única de alta conversão</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Copy orientada a resultado</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Integração com WhatsApp</li>
+            </ul>
+            <a class="btn-outline-sm" href="#contato">Solicitar orçamento</a>
+          </div>
+          <div class="price-card reveal">
+            <span class="price-tag mono">Identidade visual</span>
+            <h3>Logo & identidade</h3>
+            <p class="price-value"><small>a partir de</small><br>R$ 400</p>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Logotipo + variações</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Paleta de cores e tipografia</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Guia de marca em PDF</li>
+            </ul>
+            <a class="btn-outline-sm" href="#contato">Solicitar orçamento</a>
+          </div>
+          <div class="price-card reveal">
+            <span class="price-tag mono">Aplicativos</span>
+            <h3>Aplicativo sob medida</h3>
+            <p class="price-value"><small>a partir de</small><br></r>R$ 2.200</p>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Escopo definido em reunião</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Design de telas incluso</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Valor varia por complexidade</li>
+            </ul>
+            <a class="btn-outline-sm" href="#contato">Solicitar orçamento</a>
+          </div>
+          <div class="price-card reveal">
+            <span class="price-tag mono">Edição de vídeos</span>
+            <h3>Vídeo para redes</h3>
+            <p class="price-value"><small>a partir de</small><br>R$ 180</p>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Cortes, legendas e trilha</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Formato vertical ou horizontal</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Preço por vídeo entregue</li>
+            </ul>
+            <a class="btn-outline-sm" href="#contato">Solicitar orçamento</a>
+          </div>
+          <div class="price-card destaque reveal">
+            <span class="price-tag mono">Ecossistema integrado</span>
+            <h3>Pacote completo</h3>
+            <p class="price-value"><small>a partir de</small><br>R$ 3.200</p>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Site + identidade + vídeo + app</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Mesma linguagem visual em tudo</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg>Condição especial por pacote</li>
+            </ul>
+            <a class="btn-outline-sm" href="#contato">Solicitar orçamento</a>
+          </div>
+        </div>
+        <p class="precos-nota">
+          Valores de exemplo — o investimento final é sempre combinado antes
+          do início do projeto, de acordo com o escopo combinado.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROCESSO
+         ===================================================== -->
+    <section class="process" id="processo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">// como funciona</span>
+          <h2>Do primeiro contato à entrega</h2>
+        </div>
+        <div class="process-list">
+          <div class="process-item reveal">
+            <span class="num mono">01</span>
+            <h3>Conversa inicial</h3>
+            <p>
+              Entendo sua necessidade, seu negócio e o que você quer alcançar.
+            </p>
+          </div>
+          <div class="process-item reveal">
+            <span class="num mono">02</span>
+            <h3>Proposta</h3>
+            <p>
+              Escopo, prazo e valor combinados antes de qualquer trabalho
+              começar.
+            </p>
+          </div>
+          <div class="process-item reveal">
+            <span class="num mono">03</span>
+            <h3>Criação</h3>
+            <p>
+              Mão na massa, com atualizações no caminho para você acompanhar.
+            </p>
+          </div>
+          <div class="process-item reveal">
+            <span class="num mono">04</span>
+            <h3>Entrega & suporte</h3>
+            <p>
+              Site, app ou vídeo no ar — com suporte para o que vier depois.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         DIFERENCIAIS
+         ===================================================== -->
+    <section class="diff">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">// por que eu</span>
+          <h2>Um contato só, sem perder qualidade</h2>
+        </div>
+        <div class="diff-grid">
+          <div class="diff-item reveal">
+            <h3>Um único contato para tudo</h3>
+            <p>
+              Sem precisar alinhar visual e prazo entre vários fornecedores.
+            </p>
+          </div>
+          <div class="diff-item reveal">
+            <h3>Comunicação direta</h3>
+            <p>
+              Você fala comigo, quem realmente executa — sem intermediários.
+            </p>
+          </div>
+          <div class="diff-item reveal">
+            <h3>Tecnologia + design</h3>
+            <p>
+              Formação técnica unida à atenção com identidade visual e
+              experiência.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CHAMADA FINAL
+         ===================================================== -->
+    <section class="cta seam-top" id="contato">
+      <div class="wrap reveal">
+        <span class="eyebrow">Vamos conversar</span>
+        <h2>Tem um projeto em mente?</h2>
+        <p>
+          Me conta o que você precisa e eu te retorno com os próximos passos.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="mailto:dineixavierr@gmail.com"
+            >Enviar e-mail</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="https://wa.me/+5532984180744"
+            target="_blank"
+            rel="noopener"
+            >Chamar no WhatsApp</a
+          >
+        </div>
+        <span class="teaser"
+          >Portfólio com projetos reais de clientes chegando em breve</span
+        >
+      </div>
+    </section>
+
+    <!-- =====================================================
+         RODAPÉ
+         ===================================================== -->
+    <footer>
+      <div class="wrap footer-inner">
+        <span
+          >© 2026 DINEIX — Soluções Digitais Completas. Todos os direitos
+          reservados.</span
+        >
+        <span>dineixavierr@gmail.com</span>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         SCRIPTS
+         ===================================================== -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
