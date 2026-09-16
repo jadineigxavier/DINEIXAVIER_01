@@ -330,7 +330,7 @@
            ===================================================== */
         .hero{
             position: relative;
-            padding:3rem 0 4rem;
+            padding:1rem 0 4rem;
             overflow: hidden;
             background: var(--bg);
         }
